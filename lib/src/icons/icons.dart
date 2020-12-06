@@ -65,4 +65,17 @@ class MyIcons {
   static const IconData create = IconData(0xe951, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData trash = IconData(0xe952, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData write = IconData(0xe953, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData address = IconData(0xe954, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData birthday = IconData(0xe955, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData captureImage = IconData(0xe956, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData closeCircle = IconData(0xe957, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData couponCode = IconData(0xe958, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData firstName = IconData(0xe959, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData footprints = IconData(0xe960, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData incrementDecrement = IconData(0xe961, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData lastName = IconData(0xe962, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData phoneNumber = IconData(0xe963, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData price = IconData(0xe964, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData reference = IconData(0xe965, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData saguProduct = IconData(0xe966, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
