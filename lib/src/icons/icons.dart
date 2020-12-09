@@ -78,4 +78,8 @@ class MyIcons {
   static const IconData price = IconData(0xe964, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData reference = IconData(0xe965, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData saguProduct = IconData(0xe966, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData warningCircle = IconData(0xe967, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData warningTriangle = IconData(0xe968, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData gallery = IconData(0xe969, fontFamily: _kFontFam, fontPackage: _kFontPkg);
+  static const IconData sentFly = IconData(0xe970, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }
