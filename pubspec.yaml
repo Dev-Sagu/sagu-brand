@@ -3,9 +3,9 @@ description: Dart package which manages sagu brand.
 version: 1.0.0
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  # meta: ^1.1.8
   flutter:
     sdk: flutter
+  lol_colors_flutter: ^0.2.0

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:sagu_brand/brand.dart';
 
 class MainViewPage extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,100 +17,238 @@ class MainViewPage extends StatelessWidget {
                 child: Column(
                   children: [
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-                      child: Text("Primary Color", style: Theme.of(context).textTheme.headline6.copyWith(color: Sagu.primary),),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      child: Text(
+                        "Primary Color",
+                        style: Theme.of(context)
+                            .textTheme
+                            .headline6!
+                            .copyWith(color: Sagu.primary),
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: BoxColor(color: Sagu.primary,),
+                      child: BoxColor(
+                        color: Sagu.primary,
+                      ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-                      child: Text("Secondary Color", style: Theme.of(context).textTheme.headline6.copyWith(color: Sagu.secondary),),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: BoxColor(color: Sagu.secondary,),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-                      child: Text("Complementary(success) Color", style: Theme.of(context).textTheme.headline6.copyWith(color: Sagu.complementary),),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: BoxColor(color: Sagu.complementary,),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-                      child: Text("Dark Color", style: Theme.of(context).textTheme.headline6.copyWith(color: Sagu.dark),),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      child: Text(
+                        "Secondary Color",
+                        style: Theme.of(context)
+                            .textTheme
+                            .headline6!
+                            .copyWith(color: Sagu.secondary),
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: BoxColor(color: Sagu.dark,),
+                      child: BoxColor(
+                        color: Sagu.secondary,
+                      ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-                      child: Text("Orange(danger) Color", style: Theme.of(context).textTheme.headline6.copyWith(color: Sagu.orange),),
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      child: Text(
+                        "Complementary(success) Color",
+                        style: Theme.of(context)
+                            .textTheme
+                            .headline6!
+                            .copyWith(color: Sagu.complementary),
+                      ),
                     ),
                     Padding(
                       padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: BoxColor(color: Sagu.orange,),
+                      child: BoxColor(
+                        color: Sagu.complementary,
+                      ),
                     ),
-                    SizedBox(height: 20,),
+                    Padding(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      child: Text(
+                        "Dark Color",
+                        style: Theme.of(context)
+                            .textTheme
+                            .headline6!
+                            .copyWith(color: Sagu.dark),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      child: BoxColor(
+                        color: Sagu.dark,
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                      child: Text(
+                        "Orange(danger) Color",
+                        style: Theme.of(context)
+                            .textTheme
+                            .headline6!
+                            .copyWith(color: Sagu.orange),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      child: BoxColor(
+                        color: Sagu.orange,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Container(
                       height: 400,
                       margin: EdgeInsets.symmetric(horizontal: 10),
                       child: GridView.builder(
                         itemCount: Sagu.colors.length,
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          crossAxisSpacing: 10,
-                          mainAxisSpacing: 10
-                        ),
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 10,
+                            mainAxisSpacing: 10),
                         itemBuilder: (context, index) {
-                          return LinearPairColors(linear: Sagu.colors[index],);
+                          return LinearPairColors(
+                            linear: Sagu.colors[index],
+                          );
                         },
                       ),
-                    )
+                    ),
+                    Text(
+                      "headline 1",
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline1!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "headline 2",
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline2!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "headline 3",
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline3!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "headline 4",
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline4!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "headline 5",
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline5!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "headline 6",
+                      style: Theme.of(context)
+                          .textTheme
+                          .headline6!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "bodyText 1",
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyText1!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "bodyText 2",
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyText2!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "subtitle 1",
+                      style: Theme.of(context)
+                          .textTheme
+                          .subtitle1!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "subtitle 2",
+                      style: Theme.of(context)
+                          .textTheme
+                          .subtitle2!
+                          .copyWith(color: Sagu.dark),
+                    ),
+                    Text(
+                      "overline",
+                      style: Theme.of(context)
+                          .textTheme
+                          .overline!
+                          .copyWith(color: Sagu.dark),
+                    ),
                   ],
-     ),
+                ),
               ),
             ),
           ),
         ],
       ),
-   );
+    );
   }
 }
-final shades = [900,800,700,600,500,400,300,200,100,50];
+
+final shades = [900, 800, 700, 600, 500, 400, 300, 200, 100, 50];
 
 class BoxColor extends StatelessWidget {
   final MaterialColor color;
 
-  const BoxColor({Key key,@required this.color}) : super(key: key);
+  const BoxColor({
+    Key? key,
+    required this.color,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 50,
       width: double.infinity,
       child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: shades.length,
-        itemBuilder: (context, index) {
-        return Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Container(
-              color: color[shades[index]],
-              height: 40,
-              width: 40,
-            ),
-            color.value.compareTo(color[shades[index]].value) == 0 ?
-              Text("${shades[index]}", style: TextStyle(fontSize: 8, fontWeight: FontWeight.w900),):
-              Text("${shades[index]}", style: TextStyle(fontSize: 8,),),
-          ],
-        );
-      }),
+          scrollDirection: Axis.horizontal,
+          itemCount: shades.length,
+          itemBuilder: (context, index) {
+            return Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  color: color[shades[index]],
+                  height: 40,
+                  width: 40,
+                ),
+                color.value.compareTo(color[shades[index]]!.value) == 0
+                    ? Text(
+                        "${shades[index]}",
+                        style:
+                            TextStyle(fontSize: 7, fontWeight: FontWeight.w900),
+                      )
+                    : Text(
+                        "${shades[index]}",
+                        style: TextStyle(
+                          fontSize: 7,
+                        ),
+                      ),
+              ],
+            );
+          }),
     );
   }
 }
@@ -119,25 +256,28 @@ class BoxColor extends StatelessWidget {
 class LinearPairColors extends StatelessWidget {
   final List<Color> linear;
 
-  const LinearPairColors({Key key,@required this.linear}) : super(key: key);
+  const LinearPairColors({
+    Key? key,
+    required this.linear,
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 70,
       width: 70,
-      child: Center(child: Text(linear.toString(), style: TextStyle(color: Colors.white),textAlign: TextAlign.center,)) ,
+      child: Center(
+          child: Text(
+        linear.toString(),
+        style: TextStyle(color: Colors.white),
+        textAlign: TextAlign.center,
+      )),
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: linear,
-          begin: Alignment.bottomLeft,
-          // end: Alignment.topRight
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.2)
-          )
-        ]
-      ),
+          gradient: LinearGradient(
+            colors: linear,
+            begin: Alignment.bottomLeft,
+            // end: Alignment.topRight
+          ),
+          boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.2))]),
     );
   }
 }
