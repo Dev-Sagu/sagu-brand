@@ -6,6 +6,7 @@ class MyIcons {
   static const _kFontFam = 'cgo';
   static const _kFontPkg = null;
 
+  static const IconData gps = IconData(0xe900, fontFamily: _kFontFam);
   static const IconData cgo_logo = IconData(0xe901, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData cgo_filter = IconData(0xe992, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData chevronDownCircle = IconData(0xe902, fontFamily: _kFontFam, fontPackage: _kFontPkg);
